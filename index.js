@@ -15,13 +15,13 @@ app.post('/create-file', (req, res) => {
   const timestamp = new Date().toISOString();
 
   // Generate the file name using the current date and time
- 
+//   const fileName = `${timestamp}.txt`;
 
   // Construct the file path
   
 
   // Create the file and write the timestamp content
-  fs.writeFile(`c:/Users/Ajay Shanmugam/Desktop/nodejstask/${timestamp}.txt`, timestamp, (err) => {
+  fs.writeFile(`c:/Users/Ajay Shanmugam/Desktop/nodejstask/ajay.txt`, timestamp, (err) => {
     if (err) {
       console.error(err);
       return res.status(500).json({ error: 'Failed to create the file.' });
